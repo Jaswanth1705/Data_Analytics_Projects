@@ -1,0 +1,66 @@
+# BharatNet Data Analytics Project
+
+## Project Overview
+This project analyzes the BharatNet initiative, a Government of India project aimed at providing high-speed broadband connectivity to rural areas. The dataset consists of information on the total number of Gram Panchayats (GPs) and the number of service-ready Gram Panchayats across different states in India. The analysis involves data cleaning, exploratory data analysis (EDA), statistical hypothesis testing, and visualizations to derive insights about broadband deployment in rural India.
+
+## Dataset Description
+The dataset contains the following key attributes:
+- **State**: Name of the state in India.
+- **Total Gram Panchayats**: The total number of rural administrative bodies in each state.
+- **Service Ready Gram Panchayats**: The number of Panchayats that have been made broadband-ready under BharatNet.
+
+## Steps Performed
+
+### 1. Data Cleaning
+- Removed missing values and duplicates.
+- Converted necessary columns to numeric format.
+- Standardized column names.
+
+### 2. Exploratory Data Analysis (EDA)
+- Descriptive statistics for numerical columns.
+- Identified trends and variations across different states.
+- Generated 20+ visualizations using Matplotlib and Seaborn, including bar charts, line plots, scatter plots, and pie charts.
+
+### 3. Statistical Analysis
+- **T-Test**: Compared means of total vs. service-ready Gram Panchayats to check if there is a significant difference.
+- **F-Test**: Conducted Levene’s test to compare variance in distributions between states.
+
+### 4. Visualizations
+Some of the key plots generated:
+- Total Gram Panchayats over states (line plot).
+- Stacked bar chart for total vs. service-ready Panchayats per state.
+- Top 15 states by total Gram Panchayats (bar chart).
+- Top 15 states by service-ready Gram Panchayats (bar chart).
+
+## Observations & Insights
+- Significant variations exist in broadband readiness across different states.
+- Some states have a high number of total Panchayats but a relatively low number of service-ready ones.
+- The T-test results indicated a statistically significant difference between total and service-ready Gram Panchayats.
+- The F-test suggested that variance in broadband deployment across states is not uniform, highlighting disparities in infrastructure development.
+
+## Conclusion
+The analysis highlights the progress of the BharatNet initiative and identifies areas that require improvement. Policymakers can use these insights to focus on states lagging in broadband connectivity and allocate resources efficiently to bridge the digital divide.
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scipy
+
+## How to Run the Project
+1. Clone this repository.
+2. Install required dependencies using `pip install pandas numpy matplotlib seaborn scipy`.
+3. Run the Jupyter Notebook step by step.
+4. Analyze the visualizations and statistical results.
+
+## Future Scope
+- Incorporate machine learning to predict broadband readiness in new regions.
+- Perform geospatial analysis to map connectivity gaps.
+- Extend the dataset with additional parameters like internet speed and population density.
+
+---
+
+This project provides valuable insights into India's rural broadband connectivity and can serve as a foundation for further research in digital infrastructure development.
+
